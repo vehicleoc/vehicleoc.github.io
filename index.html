@@ -88,6 +88,61 @@
       color: #344252;
     }
 
+    .cta-row {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 190px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 14px 30px rgba(22,119,255,0.22);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 18px 36px rgba(22,119,255,0.28);
+    }
+
+    .btn-secondary {
+      background: rgba(22,119,255,.08);
+      border: 1px solid rgba(22,119,255,.18);
+      color: var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(22,119,255,.12);
+    }
+
+    .mvp-note {
+      margin: 16px auto 0;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.6;
+    }
+
     .feature-grid {
       margin-top: 40px;
       display: grid;
@@ -198,6 +253,14 @@
         grid-template-columns: 1fr;
       }
 
+      .cta-row {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
       .socials a {
         font-size: 1.7rem;
       }
@@ -225,6 +288,23 @@
       to the machines we drive.
     </p>
   </div>
+
+  <div class="cta-row">
+    <a href="https://app.vehicleoc.com" class="btn btn-primary">
+      <i class="fa-solid fa-gauge-high"></i>
+      Try the Garage MVP
+    </a>
+
+    <a href="https://github.com/vehicleoc" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-github"></i>
+      View GitHub
+    </a>
+  </div>
+
+  <p class="mvp-note">
+    Early local-first MVP. Garage and maintenance data is currently saved in your browser.
+    Cloud sync, accounts, and advanced telemetry features are planned for later.
+  </p>
 
   <div class="feature-grid">
 
@@ -293,23 +373,23 @@
       <i class="fa-solid fa-envelope"></i>
     </a>
 
-    <a href="https://github.com/vehicleoc" target="_blank" title="GitHub">
+    <a href="https://github.com/vehicleoc" target="_blank" rel="noopener noreferrer" title="GitHub">
       <i class="fa-brands fa-github"></i>
     </a>
 
-    <a href="https://x.com/vehicleoc" target="_blank" title="X">
+    <a href="https://x.com/vehicleoc" target="_blank" rel="noopener noreferrer" title="X">
       <i class="fa-brands fa-x-twitter"></i>
     </a>
 
-    <a href="https://instagram.com/vehicleoc" target="_blank" title="Instagram">
+    <a href="https://instagram.com/vehicleoc" target="_blank" rel="noopener noreferrer" title="Instagram">
       <i class="fa-brands fa-instagram"></i>
     </a>
 
-    <a href="https://facebook.com/vehicleoc" target="_blank" title="Facebook">
+    <a href="https://facebook.com/vehicleoc" target="_blank" rel="noopener noreferrer" title="Facebook">
       <i class="fa-brands fa-facebook"></i>
     </a>
 
-    <a href="https://youtube.com/@vehicleoc" target="_blank" title="YouTube">
+    <a href="https://youtube.com/@vehicleoc" target="_blank" rel="noopener noreferrer" title="YouTube">
       <i class="fa-brands fa-youtube"></i>
     </a>
 
